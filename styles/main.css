@@ -1,0 +1,9 @@
+#search {
+  border: 3px solid red;
+  width: 100%;
+  height: 400px;
+}
+#search > img {
+  width: 100%;
+  height: 400px;
+}
