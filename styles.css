@@ -29,6 +29,7 @@ margin-bottom: 20px;
 #image>img{
 
 width: 57%;
+height: 60%;
 margin-left: 45px;
 }
 #imageflex{
@@ -52,31 +53,45 @@ margin-left: 45px;
 #title>h3{
     font-family: ProximaNova, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
 font-weight: 330;
-line-height: 36px;
+line-height: 39px;
 color: #000000;
 font-size: 32px
+
 }
 #title_location{
     font-family: ProximaNova, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
-margin-top: 15px;
-font-size: 15px;
-line-height: 18px;
+margin-top: 19px;
+font-size: 17px;
+line-height: 22px;
 color: #484848;
 font-weight: 300;
-padding-bottom: -2000px;
-border: 1px solid green;
-
+margin-bottom: 15px;
 }
 .material-icons{
   
   padding: 5px;
 }
-title>hr{
-    display: block;
-    margin-top: 50px;
-    margin-bottom: 0.5em;
-    margin-left: auto;
-    margin-right: auto;
-    border-style: inset;
-    border-width: 1px;
+#title hr{
+    height: 1px;
+        background-color: #ccc;
+        border: none;
+        margin-bottom: 10px;
+}
+.t_button>button{
+    padding: 5px;
+    border: 1px solid #1e87f0;
+    padding-left: 12px;
+    padding-right: 12px;
+    margin-top: 20px;
+    background-color: white;
+    font-family: ProximaNova, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    font-weight: 400;
+    color: #1e87f0;
+    line-height: 20px;
+    font-size: 16px;
+    border-radius: 2px;
+    margin-left: 10px;
+}
+#details_anchor{
+    display: flex;
 }
