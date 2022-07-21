@@ -1,0 +1,151 @@
+*{
+    padding:0px;
+    margin:0px;
+}
+#first_btn{
+    width:95%;
+  
+    margin:auto;
+    margin-top: 60px;;
+}
+#btn1{
+    border: 1px solid transparent;
+    background-color: white;
+    margin-left: px;
+    font-size: 15px;
+    cursor: pointer;
+}
+#btn2{
+    border: 1px solid transparent;
+    background-color: white;
+    margin-left: 40px;
+    font-size: 15px;
+    cursor: pointer;
+}
+#first_btn+hr{
+    width: 95%;
+    margin: auto;
+    margin-top: 10px;
+    height: 0.5px;
+    background-color: grey;
+}
+#cont1{
+    
+    width:95%;
+    margin:auto;
+    /* border:1px solid green; */
+    margin-top: 30px;
+}
+#tab1{
+width:100%;
+grid-template-columns: repeat(4,1fr);
+gap:10px;
+display:grid;
+}
+#tab1>div{
+    /* border:1px solid red; */
+    padding:10px;
+
+
+}
+#tab1>div>a{
+    text-decoration: none;
+   color:rgb(154, 152, 152)
+}
+#tab1>div>a>p:first-child{
+    text-decoration: none;
+   color:black;
+}
+
+#tab1 p:first-child:hover{
+    color:rgb(89, 208, 255)
+}
+#tab1 p:hover{
+text-decoration: underline;
+}
+
+
+#cont2{
+    /* border:1px solid red; */
+    display: flex;
+    width:95%;
+    margin:auto;
+    margin-top:20px;
+
+  
+}
+#cont2 p{
+    padding:5px;
+    color:rgb(154, 152, 152)
+}
+#cont2>a{
+    text-decoration: none;
+     color:rgb(154, 152, 152)
+}
+hr{
+    width: 95%;
+    margin: auto;
+    margin-top: 10px;
+    height: 0px;
+    background-color: grey;
+}
+#container{
+    border:1px solid red;
+    width:95%;
+    margin:auto;
+    margin-top:30px;
+display: flex;
+
+gap:40px;
+position:relative
+
+
+
+}
+#container>a> div{
+    width:100%;
+    border:1px solid red;
+  
+
+
+
+}
+#container a{
+text-decoration: none;
+}
+#container a:hover{
+    text-decoration: underline;
+    
+}
+#container img{
+width:300px;
+    
+   
+    
+}
+#container p{
+    padding:5px;
+}
+#head{
+    /* border:1px solid red; */
+    width:95%;
+    margin:auto;
+    margin-top:30px;
+}
+#container button{
+    position:absolute;
+ 
+    padding:5px;
+  top:160px;
+    color:grey;
+    font-size:30px;
+    cursor: pointer; 
+    background-color: rgba(77,77,77, 0.4);
+   
+}
+#container button:nth-child(1){
+    left:0px;
+}
+#container button:nth-child(2){
+    right:0px;
+}
