@@ -17,6 +17,7 @@
   color: #666666;
   margin-top: 50px;
   margin-bottom: 20px;
+  margin-left: 44px;
 }
 #home > p {
   margin: 5px;
@@ -90,7 +91,7 @@
 }
 #vr{
   border-left: 1px solid #ccc;
-  height: 400%;
+  height: 340%;
   position: absolute;
   left: 71%;
   margin-left: 50px;
@@ -422,4 +423,15 @@ margin-top: 13px;
   position: sticky;
   margin-top: 22px;
  
+}
+#policies{
+  width: 69%;
+}
+#policies p,#policies h2{
+  margin-left: 47px;
+}
+#policies p{
+  margin-top: 20px;
+  color: 
+  #66666b;
 }
