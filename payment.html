@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>Payment Gateway</title>
+
+    <style>
+
+*{
+            font-family: ProximaNova, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+        }
+
+        label{
+            color: white;
+        }
+        body{
+            background-image: url(https://htmlcolorcodes.com/assets/images/html-color-codes-color-tutorials-hero.jpg);
+        }
+
+.row {
+  display: -ms-flexbox; /* IE10 */
+  display: flex;
+  -ms-flex-wrap: wrap; /* IE10 */
+  flex-wrap: wrap;
+  margin: 0 -16px;
+
+  background-image: url(https://htmlcolorcodes.com/assets/images/html-color-codes-color-tutorials-hero.jpg);
+
+}
+
+.col-25 {
+  -ms-flex: 25%; /* IE10 */
+  flex: 25%;
+  background-image: url(https://htmlcolorcodes.com/assets/images/html-color-codes-color-tutorials-hero.jpg);
+
+}
+
+.col-50 {
+  -ms-flex: 50%; /* IE10 */
+  flex: 50%;
+
+  background-image: url(https://htmlcolorcodes.com/assets/images/html-color-codes-color-tutorials-hero.jpg);
+
+}
+
+.col-75 {
+  -ms-flex: 75%; /* IE10 */
+  flex: 75%;
+  background-image: url(https://htmlcolorcodes.com/assets/images/html-color-codes-color-tutorials-hero.jpg);
+
+}
+
+.col-25,
+.col-50,
+.col-75 {
+  padding: 0 16px;
+  background-image: url(https://htmlcolorcodes.com/assets/images/html-color-codes-color-tutorials-hero.jpg);
+
+}
+
+.container {
+  background-color: #f2f2f2;
+  display: flex;
+
+  justify-content: center;
+  align-items: center;
+  padding: 5px 20px 15px 20px;
+  /* border: 1px solid lightgrey; */
+  border-radius: 3px;
+  background-image: url(https://htmlcolorcodes.com/assets/images/html-color-codes-color-tutorials-hero.jpg);
+
+}
+
+input[type=text] {
+  width: 90%;
+  margin-bottom: 20px;
+  background-color: rgb(247, 240, 240);
+  color: rgb(234, 233, 241);
+  padding: 12px;
+  border: 1px solid #ccc;
+  /* border-radius: 3px; */
+  background-image: url(https://htmlcolorcodes.com/assets/images/html-color-codes-color-tutorials-hero.jpg);
+
+}
+
+label {
+  margin-bottom: 10px;
+  display: block;
+}
+
+.icon-container {
+  margin-bottom: 20px;
+  padding: 7px 0;
+  font-size: 24px;
+}
+
+#btn {
+  background-color: black;
+  color: white;
+  padding: 12px;
+  margin: 10px 0;
+  border: none;
+  width: 300px;
+  border-radius: 3px;
+  cursor: pointer;
+  font-size: 17px;
+  margin-top: 20%;
+  display: flex;
+  margin: auto;
+  justify-content: center;
+  align-items: center;
+}
+
+#btn:hover {
+  background-color: #06af22;
+
+}
+
+
+span.price {
+  float: right;
+  color: grey;
+}
+
+/* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other (and change the direction - make the "cart" column go on top) */
+@media (max-width: 800px) {
+  .row {
+    flex-direction: column-reverse;
+  }
+  .col-25 {
+    margin-bottom: 20px;
+  }
+}
+#pay {
+    text-align: center;
+
+
+    width: 50%;
+    height: 50px;
+    margin: auto;
+    margin-bottom: 20px;
+    color: rgb(233, 229, 229);
+}
+ #Dcard{
+    height: 400px;
+    margin-left: 30%;
+    display: flex;
+
+
+
+ }
+
+ #secure{
+    text-align: center;
+    color: white;
+ }
+
+
+
+    </style>
+</head>
+<body>
+
+    <div id="navbar"></div>
+
+    <h1 id="pay">PAYMENT GATEWAY</h1>
+    <div id="Dcard">
+        <img src="https://i.pinimg.com/originals/0f/c1/e3/0fc1e399e98d357623b1d78c2820e5cd.gif" alt="">
+    </div>
+
+
+    <div class="row">
+        <div class="col-75">
+          <div class="container">
+            <form action="/action_page.php">
+
+              <div class="row">
+                <div class="col-50">
+                  <h3></h3>
+                  <label for="fname"><i class="fa fa-user"></i> Full Name</label>
+                  <input type="text" id="fname" name="firstname" placeholder="Full name">
+                  <label for="email"><i class="fa fa-envelope"></i> Email</label>
+                  <input type="text" id="email" name="email" placeholder="Email Address">
+                </div>
+
+
+
+
+                <div class="col-50">
+                  <h3 style="color: white;">Payment</h3>
+
+                  <label for="cname">Name on Card</label>
+                  <input type="text" id="cname" name="cardname" placeholder="Name as on card">
+                  <label for="ccnum">Credit card number</label>
+                  <input type="text" id="ccnum" name="cardnumber" placeholder="16 Digit Card Number">
+                  <label for="expmonth">Exp Month</label>
+                  <input type="text" id="expmonth" name="expmonth" placeholder="Month">
+
+                  <div class="row">
+                    <div class="col-50">
+                      <label for="expyear">Exp Year</label>
+                      <input type="text" id="expyear" name="expyear" placeholder="Year">
+                    </div>
+                    <div class="col-50">
+                      <label for="cvv">CVV</label>
+                      <input type="text" id="cvv" name="cvv" placeholder="3 Digit CVV">
+                    </div>
+                  </div>
+                </div>
+
+              </div>
+              <label>
+                <input style="margin-bottom: 20px;" type="checkbox" checked="checked" name="sameadr"> By clicking on this, You are Accepted the Rules and Regulation of hotel
+              </label>
+               <a id="btn" href="./end.html">CONTINUE TO CHECKOUT</a>
+
+               <div id="secure">
+                <h3>100% secure payment powered by PayTm </h3>
+               </div>
+            </form>
+          </div>
+        </div>
+
+
+
+</body>
+</html>
+<script src="./scripts/navbar_import.js" type="module"></script>
+<script src="./scripts/buttons_navbar_PR.js"></script>
