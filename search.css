@@ -1,0 +1,97 @@
+#search {
+    width: 95%;
+    height: 300px;
+    margin:auto;
+    position: relative;
+  }
+  #background {
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    background-color:white;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    opacity: 0.9;
+  }
+  #background > img {
+    width: 100%;
+    height: 400px;
+    position: absolute;
+  }
+  
+  #search > #uppersection > #heading > h1 {
+    color: black;
+    position: absolute;
+    width: 80%;
+    top: 20%;
+    margin-left: 10%;
+    font-weight: 500;
+  }
+  #search > #uppersection > #heading > #h1second {
+    top: 30%;
+    opacity: 1;
+  }
+  #uppersection > #heading > h1 > span {
+    text-decoration: line-through;
+  }
+  #lowersection {
+    display: flex;
+    background-color: white;
+    position: absolute;
+    top: 50%;
+    margin-left:25%;
+    padding: 10px;
+    /* justify-content: space-around; */
+    
+    width: 75%;
+  }
+  
+  /* #lowersection > #locationinput {
+    border: 1px solid gray;
+    display: flex;
+    align-items: center;
+  } */
+  #lowersection span {
+    padding: 5px;
+    color: gray;
+  }
+  #lowersection input {
+    font-size: 22px;
+    border: none;
+    padding: 5px;
+  }
+  #lowersection > #checkindiv {
+    display: flex;
+    align-items: center;
+    border: 1px solid gray;
+    width: 20%;
+    
+  }
+  #lowersection > #checkoutdiv {
+    display: flex;
+    align-items: center;
+    border: 1px solid gray;
+    width: 20%;
+  }
+  #lowersection > #guestdiv {
+    border: 1px solid gray;
+    width: 15%;
+    align-items: center;
+    font-size: 12px;
+  }
+  #lowersection > #guestdiv > input {
+    width: 100%;
+  }
+  
+  #lowersection > #submit {
+    padding: 5px 15px;
+    border: none;
+    background-color: #1e87f0;
+    cursor: pointer;
+    color: white;
+  }
+  #heading>h1{
+    text-align: center;
+    color:black;
+  }
