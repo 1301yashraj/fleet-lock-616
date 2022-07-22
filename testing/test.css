@@ -1,0 +1,16 @@
+#container {
+  display: flex;
+  border: 2px solid red;
+  overflow: hidden;
+}
+#slide {
+  display: flex;
+  margin: auto;
+  justify-content: space-between;
+}
+.slider_content {
+  width: 260px;
+  height: 160px;
+  border: 2px solid blue;
+  margin: 30px;
+}
