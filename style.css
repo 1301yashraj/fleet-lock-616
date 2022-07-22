@@ -10,14 +10,20 @@ body{
     display: flex;
     background-color:black;
     align-items: center;
+
    
 }
 
 #logo{
 
-    width:140px;
-    height:20px;
+    width:130px;
+    height:30px;
     padding-top:10px;
+    display: flex;
+    size: 100px;
+    margin-left: 0px;
+    margin-bottom: 10px;
+    
    
     
   
@@ -46,8 +52,13 @@ body{
 #nav2{
     float:left;
     position: relative;
-    left: 1000px;
+    left: 78%;
     gap:10px;
+    display: flex;
+    size: 100px;
+    margin-right: 30px;
+    margin-bottom: 0px;
+    
 }
 
 
