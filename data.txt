@@ -11,7 +11,8 @@ maxguests: "10"
 refid: "200"
 title: "Jomtien Paradise Villa | 5 Bed Property With Jet Pool And Sauna In Pattaya"
 type_of_property: "Villa",
-Rating:4
+Rating:4,
+Rated:Excelent Stay,
 },
 {
 Ammenities:['Swimming Pool', 'Air Conditioner', 'Internet', 'Television'],
@@ -26,7 +27,8 @@ maxguests: "10",
 refid: "201",
 title: "Baan Chokdee | 5 Bed Pool Villa Near Jomtien Beach In South Pattaya",
 type_of_property: "Villa",
-Rating:5
+Rating:5,
+Rated:Pleasent Stay,
 },
 {
 Ammenities:['Swimming Pool', 'Air Conditioner', 'Internet', 'Television', 'Parking', 'Spa'],
@@ -39,7 +41,8 @@ img_url: "https://d2vcelvjdj7n25.cloudfront.net/media/property_photos/image_wate
 maxguests: "5",
 refid: "202",
 title: "Pratumnak Regal Villa | 2 Bed Pool Home At Pratumnak Hill In Pattaya",
-Rating:"3"
+Rating:"3",
+Rated:Good for Stay,
 },
 {
 Ammenities:['Internet', 'Television', 'Parking'],
@@ -53,7 +56,8 @@ maxguests: "4",
 refid: "203",
 title: "Boutique Resort For Rent - Pepper Villa (2 Bedrooms) Stay",
 type_of_property: "Farm",
-Rating:"5"
+Rating:"5",
+Rated:Excelent Stay,
 },
 {
 Ammenities:['Swimming Pool', 'Air Conditioner', 'Internet', 'Parking', 'Spa', 'Cook On'],
@@ -67,6 +71,13 @@ maxguests: "6",
 refid: "204",
 title: "Thammachat P3 Victoria | 3 Bedroom Pattaya Pool Villa In Bangsaray",
 type_of_property: "Farm",
-Rating:"4.5"
+Rating:"4.5",
+Rated:Pleasent Stay,
 }
 ]
+
+
+
+
+
+  

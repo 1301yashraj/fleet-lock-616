@@ -1,30 +1,10 @@
-document.querySelector("#btn1").addEventListener("click", myfun1)
-let cont1=document.querySelector("#cont1")
-   
-
-import {sendData,sendTypeData} from "./component/cities.js"
-
-
-cont1.innerHTML=sendData();
-
-function myfun1(){
-//    cont1.innerHTML=null;
-   cont1.innerHTML=sendData();
-}
-document.querySelector("#btn2").addEventListener("click", myfun2)
- 
-
-function myfun2(){
-    cont1.innerHTML=null;
-    cont1.innerHTML=sendTypeData();
-}
- let websiteData=[
+let websiteData=[
     {
     Ammenities: ['Swimming Pool', 'Air Conditioner', 'Internet', 'Television', 'Parking', 'Housekeeping', 'Washing Machine', 'Refrigerator', 'Spa', 'Cook On'],
     bathroom: "4",
     bedroom: "5",
     city: "Goa",
-    costpernight: "10000",
+    costpernight: 10000,
     country: "India",
     img_url: "https://d2vcelvjdj7n25.cloudfront.net/media/property_photos/image_watermarked_1024/55791061/ed5eb2012c2711e8b2ea0a92a929817e_watermarked_image_1024.jpeg",
     maxguests: "10",
@@ -39,7 +19,7 @@ function myfun2(){
     bathroom: "5",
     bedroom: "5",
     city: "Goa",
-    costpernight: "80000",
+    costpernight: 80000,
     country: "India",
     img_url: "https://d2vcelvjdj7n25.cloudfront.net/media/property_photos/image_watermarked_1024/46007896/0b5364faa2c711e783140a92a929817e_watermarked_image_1024.jpeg",
     
@@ -55,7 +35,7 @@ function myfun2(){
     bathroom: "2",
     bedroom: "2",
     city: "Goa",
-    costpernight: "4000",
+    costpernight: 4000,
     country: "India",
     img_url: "https://d2vcelvjdj7n25.cloudfront.net/media/property_photos/image_watermarked_1024/36952294/7819757aa2c511e783140a92a929817e_watermarked_image_1024.jpeg",
     maxguests: "5",
@@ -70,7 +50,7 @@ function myfun2(){
     bathroom: "1",
     bedroom: "2",
     city: "Goa",
-    costpernight: "3000",
+    costpernight: 3000,
     country: "India",
     img_url: "https://d2vcelvjdj7n25.cloudfront.net/media/property_photos/image_watermarked_1024/72289717/255_watermarked_image_1024.jpeg",
     maxguests: "4",
@@ -85,7 +65,7 @@ function myfun2(){
     bathroom: "2",
     bedroom: "3",
     city: "Goa",
-    costpernight: "5000",
+    costpernight: 5000,
     country: "India",
     img_url: "https://d2vcelvjdj7n25.cloudfront.net/media/property_photos/image_watermarked_1024/32358195/82ededb7a2ca11e783180a92a929817e_watermarked_image_1024.jpeg",
     maxguests: "6",
@@ -110,7 +90,7 @@ function myfun2(){
         bathroom: "4",
         bedroom: "4",
         city: "goa",
-        costpernight: "20000",
+        costpernight: 20000,
         country: "India",
         img_url:
           "https://d2vcelvjdj7n25.cloudfront.net/media/property_photos/image_watermarked_1024/29525985/85be9537001f11e890160a8e1b1ce4da_watermarked_image_1024.jpeg",
@@ -127,7 +107,7 @@ function myfun2(){
         bathroom: "1",
         bedroom: "1",
         city: "goa",
-        costpernight: "4000",
+        costpernight: 4000,
         country: "India",
         img_url:
           "https://d2vcelvjdj7n25.cloudfront.net/media/property_photos/image_watermarked_1024/87277489/bn4a2377_watermarked_image_1024.jpeg",
@@ -151,7 +131,7 @@ function myfun2(){
         bathroom: "2",
         bedroom: "2",
         city: "goa",
-        costpernight: "8000",
+        costpernight: 8000,
         country: "India",
         img_url:
           "https://d2vcelvjdj7n25.cloudfront.net/media/property_photos/image_watermarked_1024/20236617/d8d719d1038011ea92530a8e1b1ce4da_watermarked_image_1024.jpeg",
@@ -177,7 +157,7 @@ function myfun2(){
         bathroom: "3",
         bedroom: "3",
         city: "goa",
-        costpernight: "7000",
+        costpernight: 7000,
         country: "India",
         img_url:
           "https://d2vcelvjdj7n25.cloudfront.net/media/property_photos/image_watermarked_1024/82258333/p6050305_watermarked_image_1024.jpeg",
@@ -214,18 +194,50 @@ function myfun2(){
     
     ]
 
+    let container=document.querySelector("#dataContainer")
+function sort(){
 
+
+    let val=document.querySelector("#SortByPrice");
+    
+    if(val.value=="Relevance"){
+      
+       
+        displayData(websiteData)
+        console.log(val.value)
+    }else if(val.value=="Low To High"){
+        websiteData.sort(function(a,b){
+            return a.costpernight-b.costpernight;
+        })
+        console.log(val.value)
+        container.innerHTML=null;
+        displayData(websiteData)
+    }else{
+        websiteData.sort(function(a,b){
+            return b.costpernight-a.costpernight;
+        })
+        console.log(val.value)
+        container.innerHTML=null;
+        displayData(websiteData)
+    }
+}
+    
     displayData(websiteData)
     function displayData(data){
         
-        let container=document.querySelector("#container")
+       
         data.forEach(function(elem){
-            let div=document.createElement("div")
+            let div=document.createElement("div")     
+                     
+            let div1=document.createElement("div")                
             let a=document.createElement("a")
-           
+            let div2=document.createElement("div")
+            div.setAttribute("id","cont")
+            div2.setAttribute("id","cont2")
+
             a.onclick=function(){
                saveInLocal(elem)
-               a.href="second.html"
+               a.href="#"
             }
 
             let image=document.createElement("img")
@@ -246,79 +258,22 @@ function myfun2(){
             additional.style.color="blue"
             let price=document.createElement("p")
             price.innerText=`₹${elem.costpernight} per night`
-          
-            div.append(image,ref,title,type,city,additional,price)
+          div2.append(ref,title,type,city,additional,price)
+            div1.append(image)
+            div.append(div1,div2)
             a.append(div)
             container.append(a)
         })
     }
-document.querySelector("#right").addEventListener("click",rightfun)
-    function rightfun(){
-        
-            document.querySelector('#container').style.scrollBehavior="smooth"
-            document.querySelector('#container').scrollLeft +=500;
-    }
-    document.querySelector("#left").addEventListener("click",leftfun)
-    function leftfun(){
     
-        document.querySelector("#container").scrollLeft -=500;
-        document.querySelector('#container').style.scrollBehavior="smooth"
-    }
-    
-   
-    //Top rated Data
-    displayData1(websiteData)
-    function displayData1(data){
-        
-        let container=document.querySelector("#container2")
-        data.forEach(function(elem){
-            let div=document.createElement("div")
-            let a=document.createElement("a")
-            a.onclick=function(){
-              saveInLocal(elem,a)
-            }
 
-            let image=document.createElement("img")
-            image.src=elem.img_url;
-            let rate=document.createElement("p")
-            rate.innerText=`Rated #${elem.Rating}`
-            rate.style.color="blue"
-            let type=document.createElement("p")
-            type.innerText=elem.Rated
-            let title=document.createElement("p")
-            title.innerText=elem.title
-            type.style.color="blue"
-            div.append(image,rate,title,type)
-            a.append(div)
-            container2.append(a)
-        })
-    }
-    document.querySelector("#right1").addEventListener("click",rightfun1)
-    function rightfun1(){
-        
-            document.querySelector('#container2').style.scrollBehavior="smooth"
-            document.querySelector('#container2').scrollLeft +=500;
-    }
-    document.querySelector("#left1").addEventListener("click",leftfun2)
-    function leftfun2(){
-    
-        document.querySelector("#container2").scrollLeft -=500;
-        document.querySelector('#container2').style.scrollBehavior="smooth"
+    function saveInLocal(elem){
+
+        let bookdata=JSON.parse(localStorage.getItem("book"))||[]
+        bookdata.push(elem)
+        localStorage.setItem("book",JSON.stringify(bookdata))
+        console.log(bookdata)
     }
 
-function saveInLocal(elem,a){
-console.log(a)
 
-let bookdata=[]
-bookdata.push(elem)
-localStorage.setItem("book",JSON.stringify(bookdata))
-console.log(bookdata)
-// a.href="second.html"
-}
-
-
-document.querySelector("#submit").addEventListener("click",submitFUn)
-  function submitFUn(){
-   
-   window.location.href="secondGoa.html"
-  }
+  

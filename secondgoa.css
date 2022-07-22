@@ -1,0 +1,80 @@
+#filter{
+    /* border:1px solid red; */
+    
+    width:100%;
+    height:50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+hr{
+    width: 100%;
+    margin: auto;
+    margin-top: 20px;
+    height: 0px;
+    background-color: grey;
+    margin-bottom: 20px;
+}
+
+#sort{
+    width:100%;
+    height:50px;
+    /* border: 1px solid red; */
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+#sort>div{
+    /* border: 1px solid red; */
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+#sort>div>select{
+    border-radius: 10px;
+    padding:5px;
+    color:blue;
+}
+
+#container{
+    width:100%;
+    /* border:1px solid red; */
+    height:100%;
+    display: flex;
+}
+
+#datahotel{
+    /* border:1px solid blue; */
+    width:60%;
+ /* height: 1000px; */
+}
+#maps{
+    /* border:1px solid blue; */
+    width:40%;
+    height: 750px;
+    position: fixed;
+    left: 920px;
+    
+}
+#dataContainer{
+    gap:40px;
+    margin-top:40px
+}
+#dataContainer{
+   
+   gap:40px;
+
+}
+#dataContainer #cont{
+display: flex;
+box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+gap:80px;
+/* border:1px solid red; */
+margin:30px
+
+}
+#dataContainer div>img{
+    width:400px;
+}

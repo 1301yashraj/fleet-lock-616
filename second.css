@@ -2,6 +2,12 @@
     padding:0px;
     margin:0px;
 }
+* {
+    padding: 0;
+    margin: 0;
+    font-family: ProximaNova, -apple-system, BlinkMacSystemFont, "Segoe UI",
+      Roboto, "Helvetica Neue", Arial, sans-serif;
+  }
 #first_btn{
     width:95%;
   
@@ -90,25 +96,26 @@ hr{
     background-color: grey;
 }
 #container{
-    border:1px solid red;
+    /* border:1px solid red; */
     width:95%;
     margin:auto;
     margin-top:30px;
 display: flex;
 
 gap:40px;
-position:relative
-
+box-sizing: border-box;
+overflow: scroll;
+overflow: hidden;
 
 
 }
 #container>a> div{
     width:100%;
-    border:1px solid red;
+    /* border:1px solid red; */
   
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 
-
-
+   height:450px;
 }
 #container a{
 text-decoration: none;
@@ -119,6 +126,7 @@ text-decoration: none;
 }
 #container img{
 width:300px;
+
     
    
     
@@ -134,13 +142,14 @@ width:300px;
 }
 #container button{
     position:absolute;
- 
+   scroll-behavior: smooth;
     padding:5px;
-  top:160px;
+    top:1000px;
     color:grey;
     font-size:30px;
     cursor: pointer; 
-    background-color: rgba(77,77,77, 0.4);
+    border: transparent;
+    background-color: transparent
    
 }
 #container button:nth-child(1){
@@ -148,4 +157,105 @@ width:300px;
 }
 #container button:nth-child(2){
     right:0px;
+}
+/* Top rated homes container2 */
+
+
+
+#container2{
+    /* border:1px solid red; */
+    width:95%;
+    margin:auto;
+    margin-top:30px;
+display: flex;
+
+gap:40px;
+box-sizing: border-box;
+overflow: scroll;
+overflow: hidden;
+
+
+}
+#container2>a> div{
+    width:100%;
+    /* border:1px solid red; */
+  
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+height:350px;
+
+}
+#container2 a{
+text-decoration: none;
+}
+#container2 a:hover{
+    text-decoration: underline;
+    
+}
+#container2 img{
+width:300px;
+    
+   
+    
+}
+#container2 p{
+    padding:5px;
+}
+#head2{
+    /* border:1px solid red; */
+    width:95%;
+    margin:auto;
+    margin-top:30px;
+}
+ #container2 button{
+    position:absolute;
+   scroll-behavior: smooth;
+    padding:5px;
+    top:1450px;
+    color:grey;
+    font-size:30px;
+    cursor: pointer; 
+    border: transparent;
+    background-color: transparent
+   
+} 
+#container2 button:nth-child(1){
+    left:0px;
+}
+#container2 button:nth-child(2){
+    right:0px;
+}
+/* About the location */
+#about{
+    /* border:1px solid red; */
+    width:95%;
+    margin:auto;
+    padding: 10px;
+    word-spacing: 15px;
+    line-height: 25px;
+    
+
+}
+#about>p{
+    margin:10px;
+    word-spacing: 15px;
+line-height: 25px;
+    
+}
+#faq{
+    width:95%;
+    margin:auto;
+    word-spacing: 10px;
+    line-height: 25px;
+    margin-bottom: 80px;
+}
+.heading{
+    width:95%;
+    margin:auto;
+    margin-top:30px;
+}
+#map{
+    width:95%;
+    /* border:1px solid red; */
+    margin:auto;
+    
 }
