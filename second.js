@@ -322,3 +322,10 @@ document.querySelector("#submit").addEventListener("click",submitFUn)
    
    window.location.href="secondGoa.html"
   }
+
+  import navbar from "../componentNav/navbar.js";
+console.log(navbar());
+document.getElementById("navbar").innerHTML = navbar();
+
+
+
