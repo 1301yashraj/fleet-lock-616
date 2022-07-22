@@ -1,8 +1,8 @@
 function myFunction() {
     document.getElementById("myDropdown").classList.toggle("show");
-    
+
   }
-  
+
   // Close the dropdown menu if the user clicks outside of it
   window.onclick = function(event) {
     if (!event.target.matches('.dropbtn')) {
@@ -16,28 +16,17 @@ function myFunction() {
       }
     }
   }
-  
+
 
   function MyFunction() {
-    
-    
+
+
     let x=document.getElementById("myDropdowns").style.visibility||"hidden";
-   
+
  if(x=="hidden"){
     document.getElementById("myDropdowns").style.visibility = "visible";
  }else{
     document.getElementById("myDropdowns").style.visibility = "hidden";
  }
   }
- 
-    
 
-  // function MyFunctionlast(){
-  //   let y =document.getElementById("hamline").style.visibility
-  //   if( y=="hidden"){
-  //     document.getElementById("hamline").style.visibility = "visible";
-
-  //   }else{
-  //     document.getElementById("hamline").style.visibility = "hidden"
-  //   }
-  // }
