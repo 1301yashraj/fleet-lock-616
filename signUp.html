@@ -1,111 +1,118 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <style>
-        #signup1{
-            margin:auto;
-            display:flex;
-            gap:50%;
-        }
-       
-        #signup{
-            box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-            border:1px solid transparent;
-            width:50%;
-            margin: auto;
-            padding:15px;
-            height:500px;
-            margin-top:40px;
-        }
-        #cont{
-            width:10%;
+      #signup1 {
+        margin: auto;
+        display: flex;
+        gap: 50%;
+      }
+
+      #signup {
+        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+        border: 1px solid transparent;
+        width: 50%;
+        margin: auto;
+        padding: 15px;
+        height: 500px;
+        margin-top: 40px;
+      }
+      #cont {
+        width: 10%;
         margin-right: 10px;
         padding: 12px 20px;
-         margin: 8px 0;
-         display: inline-block;
-         border: 1px solid #ccc;
-         border-radius: 4px;
-         box-sizing: border-box;
-        }
+        margin: 8px 0;
+        display: inline-block;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        box-sizing: border-box;
+      }
 
-        .inpu{
+      .inpu {
         width: 100%;
         padding: 12px 20px;
-         margin: 8px 0;
-         display: inline-block;
-         border: 1px solid #ccc;
-         border-radius: 4px;
-         box-sizing: border-box;
-}
-        .submit{
-         width: 30%;
-  
-       
+        margin: 8px 0;
+        display: inline-block;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        box-sizing: border-box;
+      }
+      .submit {
+        width: 30%;
+
         padding: 14px 20px;
-         margin: 8px 0;
-         border: 1px solid gray;
-         margin-left: 10px;
-         cursor: pointer;
-         float:right;
-         display: flex;
-  
-}
-        #signup2{
-            display: flex;
-            
-        }
+        margin: 8px 0;
+        border: 1px solid gray;
+        margin-left: 10px;
+        cursor: pointer;
+        float: right;
+        display: flex;
+      }
+      #signup2 {
+        display: flex;
+      }
 
-        #small{
-            font-size:13px;
-            margin-top: -10px;
-            margin-left: 60px;
-            float:left;
-            color:blue
-        }
-        #otp{
-           background-color:  rgb(62, 62, 226);
-           color:white;
-           border: blue;
-        }
-
+      #small {
+        font-size: 13px;
+        margin-top: -10px;
+        margin-left: 60px;
+        float: left;
+        color: blue;
+      }
+      #otp {
+        background-color: rgb(62, 62, 226);
+        color: white;
+        border: blue;
+      }
     </style>
-</head>
-<body>
+  </head>
+  <body>
     <form id="signup">
-        <div id="signup1">
-            <div><h1>Sign Up</h1></div>
-            
-            <div>
-                <p>Sign In Instead</p>
-            </div>
-            
-        </div>
-        <hr>
-        <div id="signup2">
-            <input type="number" id="cont">
-            <input class="inpu" type="number" name="" id="mob" placeholder="Mobile Number">
-        </div>
-        <p id="small">only digit allowed</p>
+      <div id="signup1">
+        <div><h1>Sign Up</h1></div>
 
-        
-            <input type="text" class="inpu" id="email"placeholder="Email Address">
-            <input type="password" class="inpu"name="" id="password" placeholder="Password">
-            <input type="text"class="inpu" id="firstname"placeholder="First Name">
-            <input type="text" class="inpu"name="" id="lastname" placeholder="Last Name">
-        
-        <hr>
-        <button   id="otp"class="submit" >VERIFY WITH OTP</button>
-        <button class="submit" >CANCEL</button>
+        <div>
+          <p>Sign In Instead</p>
+        </div>
+      </div>
+      <hr />
+      <div id="signup2">
+        <input type="number" id="cont" />
+        <input
+          class="inpu"
+          type="number"
+          name=""
+          id="mob"
+          placeholder="Mobile Number"
+        />
+      </div>
+      <p id="small">only digit allowed</p>
+
+      <input type="text" class="inpu" id="email" placeholder="Email Address" />
+      <input
+        type="password"
+        class="inpu"
+        name=""
+        id="password"
+        placeholder="Password"
+      />
+      <input type="text" class="inpu" id="firstname" placeholder="First Name" />
+      <input
+        type="text"
+        class="inpu"
+        name=""
+        id="lastname"
+        placeholder="Last Name"
+      />
+
+      <hr />
+      <button id="otp" class="submit">VERIFY WITH OTP</button>
+      <button class="submit">CANCEL</button>
     </form>
-    
-
-
-
-    
-</body>
+  </body>
 </html>
-<script src="./signup.js"></script>
+<script src="./scripts/signup.js"></script>

@@ -241,8 +241,8 @@ let obj = [
   // Tarun
 
   {
-    city:"Lonavala",
-    country:"India",
+    city: "Lonavala",
+    country: "India",
     title: "Cozy 2 Bhk Villa In Lonavala With Lounge Pool",
     img_url:
       "https://d2vcelvjdj7n25.cloudfront.net/media/property_photos/image_watermarked_1024/62908066/921a3775f5ed11eabc030a5f3ca25ae5_watermarked_image_1024.jpeg",
@@ -353,73 +353,116 @@ let obj = [
   //Gokul
 
   {
-Ammenities: ['Swimming Pool', 'Air Conditioner', 'Internet', 'Television', 'Parking', 'Housekeeping', 'Washing Machine', 'Refrigerator', 'Spa', 'Cook On'].
-bathroom: "4",
-bedroom: "5",
-city: "Pataya",
-costpernight: "10000",
-country: "Thailand",
-img_url: "https://www.tripvillas.com/holiday-home/31900325-jomtien-paradise-villa-5-bed-property-with-jet-pool-and-sauna-in-pattaya/",
-maxguests: "10",
-refid: "200",
-title: "Jomtien Paradise Villa | 5 Bed Property With Jet Pool And Sauna In Pattaya",
-type_of_property: "Villa",
-Rating:4
-},
-{
-Ammenities:['Swimming Pool', 'Air Conditioner', 'Internet', 'Television'],
-bathroom: "5",
-bedroom: "5",
-city: "Pataya",
-costpernight: "80000",
-country: "Thailand",
-img_url: "https://d2vcelvjdj7n25.cloudfront.net/media/property_photos/image_watermarked_1024/46007896/0b5364faa2c711e783140a92a929817e_watermarked_image_1024.jpeg",
+    Ammenities: [
+      "Swimming Pool",
+      "Air Conditioner",
+      "Internet",
+      "Television",
+      "Parking",
+      "Housekeeping",
+      "Washing Machine",
+      "Refrigerator",
+      "Spa",
+      "Cook On",
+    ],
+    bathroom: "4",
+    bedroom: "5",
+    city: "Pataya",
+    costpernight: "10000",
+    country: "Thailand",
+    img_url:
+      "https://www.tripvillas.com/holiday-home/31900325-jomtien-paradise-villa-5-bed-property-with-jet-pool-and-sauna-in-pattaya/",
+    maxguests: "10",
+    refid: "200",
+    title:
+      "Jomtien Paradise Villa | 5 Bed Property With Jet Pool And Sauna In Pattaya",
+    type_of_property: "Villa",
+    Rating: 4,
+  },
+  {
+    Ammenities: ["Swimming Pool", "Air Conditioner", "Internet", "Television"],
+    bathroom: "5",
+    bedroom: "5",
+    city: "Pataya",
+    costpernight: "80000",
+    country: "Thailand",
+    img_url:
+      "https://d2vcelvjdj7n25.cloudfront.net/media/property_photos/image_watermarked_1024/46007896/0b5364faa2c711e783140a92a929817e_watermarked_image_1024.jpeg",
 
-maxguests: "10",
-refid: "201",
-title: "Baan Chokdee | 5 Bed Pool Villa Near Jomtien Beach In South Pattaya",
-type_of_property: "Villa",
-Rating:5
-},
-{
-Ammenities:['Swimming Pool', 'Air Conditioner', 'Internet', 'Television', 'Parking', 'Spa'],
-bathroom: "2",
-bedroom: "2",
-city: "Pataya",
-costpernight: "4000",
-country: "Thailand",
-img_url: "https://d2vcelvjdj7n25.cloudfront.net/media/property_photos/image_watermarked_1024/36952294/7819757aa2c511e783140a92a929817e_watermarked_image_1024.jpeg",
-maxguests: "5",
-refid: "202",
-title: "Pratumnak Regal Villa | 2 Bed Pool Home At Pratumnak Hill In Pattaya",
-Rating:"3"
-},
-{
-Ammenities:['Internet', 'Television', 'Parking'],
-bathroom: "1",
-bedroom: "2",
-city: "Pataya",
-costpernight: "3000",
-country: "Thailand",
-img_url: "https://d2vcelvjdj7n25.cloudfront.net/media/property_photos/image_watermarked_1024/72289717/255_watermarked_image_1024.jpeg",
-maxguests: "4",
-refid: "203",
-title: "Boutique Resort For Rent - Pepper Villa (2 Bedrooms) Stay",
-type_of_property: "Farm",
-Rating:"5"
-},
-{
-Ammenities:['Swimming Pool', 'Air Conditioner', 'Internet', 'Parking', 'Spa', 'Cook On'],
-bathroom: "2",
-bedroom: "3",
-city: "Pataya",
-costpernight: "5000",
-country: "Thailand",
-img_url: "https://d2vcelvjdj7n25.cloudfront.net/media/property_photos/image_watermarked_1024/32358195/82ededb7a2ca11e783180a92a929817e_watermarked_image_1024.jpeg",
-maxguests: "6",
-refid: "204",
-title: "Thammachat P3 Victoria | 3 Bedroom Pattaya Pool Villa In Bangsaray",
-type_of_property: "Farm",
-Rating:"4.5"
-}
+    maxguests: "10",
+    refid: "201",
+    title:
+      "Baan Chokdee | 5 Bed Pool Villa Near Jomtien Beach In South Pattaya",
+    type_of_property: "Villa",
+    Rating: 5,
+  },
+  {
+    Ammenities: [
+      "Swimming Pool",
+      "Air Conditioner",
+      "Internet",
+      "Television",
+      "Parking",
+      "Spa",
+    ],
+    bathroom: "2",
+    bedroom: "2",
+    city: "Pataya",
+    costpernight: "4000",
+    country: "Thailand",
+    img_url:
+      "https://d2vcelvjdj7n25.cloudfront.net/media/property_photos/image_watermarked_1024/36952294/7819757aa2c511e783140a92a929817e_watermarked_image_1024.jpeg",
+    maxguests: "5",
+    refid: "202",
+    title:
+      "Pratumnak Regal Villa | 2 Bed Pool Home At Pratumnak Hill In Pattaya",
+    Rating: "3",
+  },
+  {
+    Ammenities: ["Internet", "Television", "Parking"],
+    bathroom: "1",
+    bedroom: "2",
+    city: "Pataya",
+    costpernight: "3000",
+    country: "Thailand",
+    img_url:
+      "https://d2vcelvjdj7n25.cloudfront.net/media/property_photos/image_watermarked_1024/72289717/255_watermarked_image_1024.jpeg",
+    maxguests: "4",
+    refid: "203",
+    title: "Boutique Resort For Rent - Pepper Villa (2 Bedrooms) Stay",
+    type_of_property: "Farm",
+    Rating: "5",
+  },
+  {
+    Ammenities: [
+      "Swimming Pool",
+      "Air Conditioner",
+      "Internet",
+      "Parking",
+      "Spa",
+      "Cook On",
+    ],
+    bathroom: "2",
+    bedroom: "3",
+    city: "Pataya",
+    costpernight: "5000",
+    country: "Thailand",
+    img_url:
+      "https://d2vcelvjdj7n25.cloudfront.net/media/property_photos/image_watermarked_1024/32358195/82ededb7a2ca11e783180a92a929817e_watermarked_image_1024.jpeg",
+    maxguests: "6",
+    refid: "204",
+    title: "Thammachat P3 Victoria | 3 Bedroom Pattaya Pool Villa In Bangsaray",
+    type_of_property: "Farm",
+    Rating: "4.5",
+  },
 ];
+
+let x = document.getElementById("goa1");
+x.addEventListener("click", () => {
+  console.log("HELLO");
+  let ar = obj.filter((el) => {
+    return el.city == "goa";
+  });
+  console.log(ar);
+  localStorage.setItem("hotles_by_city", JSON.stringify(ar));
+});
