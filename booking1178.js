@@ -18,9 +18,15 @@ let property_id = document.getElementById("ins_property")
 property_id.innerText = el.refid;
 
 let property_type = document.getElementById("priV_button");
-property_type.innerText = el.type_of_property;
-document.getElementById("typepropery").innerText = property_type.innerText;
+if(el.type_of_property==undefined){
+ let Resort = property_type.innerText = "Resort";
+  document.getElementById("typepropery").innerText = property_type.innerText;
+}else{
+  let Resort = property_type.innerText = el.type_of_property;
+  document.getElementById("typepropery").innerText = property_type.innerText;
+}
 
+console.log(el.type_of_property)
 let bathroom = document.getElementById("bathroom_dom");
 bathroom.innerText = el.bathroom;
 
@@ -45,7 +51,12 @@ let ammenit_3 = document.getElementById("amm3");
 ammenit_3.innerText = el.Ammenities[2]
 
 let ammenit_4 = document.getElementById("amm4");
-ammenit_4.innerText = el.Ammenities[3]
+if(el.Ammenities[3]==undefined){
+  ammenit_4.innerText= "Kitchen"
+}else{
+  ammenit_4.innerText = el.Ammenities[3]
+}
+
 
 
 
@@ -73,8 +84,8 @@ instant.addEventListener("click",()=>{
 
   // console.log(no_o_guest)
    let start_date = document.getElementById("from_date").value;
-   let end_date = document.getElementById("from_date").value;
-  
+   let end_date = document.getElementById("end_date").value;
+ 
 
    let obj={
     city: el.city,

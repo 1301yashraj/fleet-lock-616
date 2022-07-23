@@ -348,34 +348,38 @@
       
     <div id="imageID">
         <img id="img_1" src="https://cf.bstatic.com/xdata/images/hotel/max1024x768/230558363.jpg?k=d346be7aa296bc8772e2996141038c379a61a14281bf02293a19101306a85b6f&o=&hp=1" alt="">
-        <p id="ins_property">Property Ref Id #23799764</p>
-        <h2 id="Title">Mango House</h2>
-        <h4 id="ins_country">Galle Sri lanka</h4>
-        <h5 id="">Private Room | Accommodates 2 guests</h5>
+        <p id="ins_property"></p>
+        <h2 id="title_h3">Mango House</h2>
+        <h4 id="ins_city"></h4>
+        <h4 id="ins_country"></h4>
+        <h5 id="priV_button">Private Room | Accommodates 2 guests</h5>
 
     </div>
 
      <div id="mainbox">
       <div id="box1">
-          <h3>18-Aug-2022 <br> Check In</h3>
+          <h3 id="chec_in">18-Aug-2022 </h3><br><h3 style="margin-top: -10px;">Check In</h3>
+      </div>
+      <div id="box1" class="checkout">
+          <h3 id="check_out">24-Aug-2022</h3>
+          <br><h3 style="margin-top: -10px;"> Check Out</h3>
       </div>
       <div id="box1">
-          <h3>24-Aug-2022 <br> Check Out</h3>
+          <h3 id="no_guest">1 </h3>
+          <br> <h3 style="margin-top: -10px;">Guest</h3>
       </div>
       <div id="box1">
-          <h3 id="gst">1 <br> Guest</h3>
-      </div>
-      <div id="box1">
-          <h3>2 <br> Unit</h3>
+          <h3  >1 </h3>
+          <br> <h3 style="margin-top: -10px;">Unit</h3>
       </div>
      </div>
 
      <div id="saving">
-      <h4>Sub Total .......................................................................................................... 27000.00</h4>
+      <h4 id="sub_total">Sub Total .......................................................................................................... 000.00</h4>
       <h4>Discount ........................................................................................................................ 0</h4>
       <h4>Tax ..................................................................................................................... 3300.00</h4>
       <h4>______________________________________________________________________________________________</h4>
-      <h4>Sub Total .......................................................................................................... 30300.00</h4>
+      <h4 id="total">Sub Total .......................................................................................................... 30300.00</h4>
       <h4>______________________________________________________________________________________________</h4>
 
   </div>
@@ -449,46 +453,47 @@
 <script>
 
 
-let booking_P = JSON.parse(localStorage.getItem("bookingdone"));
-console.log(booking_P)
+let booking = JSON.parse(localStorage.getItem("bookingdone"));
 
-booking_P.forEach(el => {
-  let title = document.getElementById("Title");
+
+booking.forEach(el => {
+    let title = document.getElementById("title_h3");
 title.innerText = el.title;
-console.log(el)
+
+
+let property_id = document.getElementById("ins_property")
+property_id.innerText = `Property # ${el.refid}`;
+
+let avatar = document.getElementById("img_1");
+avatar.src = el.img_url;
+
 let country = document.getElementById("ins_country")
 country.innerText = el.country;
 
 let city = document.getElementById("ins_city");
 city.innerText = el.city;
 
-let avatar = document.getElementById("img_1");
-avatar.src = el.img_url
-console.log(avatar)
-let property_id = document.getElementById("ins_property")
-property_id.innerText = el.refid;
+let maxguest = el.maxguests;
 
 let property_type = document.getElementById("priV_button");
-property_type.innerText = el.type_of_property;
-document.getElementById("typepropery").innerText = property_type.innerText;
+property_type.innerText = `${el.type} | Accommodates ${maxguest} guests`
 
-let bathroom = document.getElementById("bathroom_dom");
-bathroom.innerText = el.bathroom;
+let chec_in= document.getElementById("chec_in");
+chec_in.innerText= el.start_date;
 
+let check_out= document.getElementById("check_out");
+check_out.innerText = el.end_date;
 
-let max_guest = document.getElementById("max_guest_dom");
-max_guest.innerText = el.maxguests;
-document.getElementById("max_guest_button").innerText = `${max_guest.innerText} Max guest`;
+let no_guest = document.getElementById("no_guest");
+no_guest.innerText = el.guest;
 
-
-let address = document.getElementById("title_location");
-address.innerText = `${el.city} | ${el.country}`
-
-
-let guest = document.getElementById("gst");
-guest.innerText = guest; 
-
-})
+let sub_total = document.getElementById("sub_total");
+sub_total.innerText = `Sub Total .......................................................................................................... ${el.total}.00`;
+let sub_price=el.total;
+let price = Number(sub_price)+3300;
+let total = document.getElementById("total");
+total.innerText = `Sub Total .......................................................................................................... ${price}.00`
+});
 
 
 
