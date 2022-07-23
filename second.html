@@ -11,9 +11,13 @@
       rel="stylesheet"
       href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0"
     />
-   <!--<link rel="stylesheet" href="secondNavbar.css">--> 
+
+
+
+    <link rel="stylesheet" href="./styles/style_PR.css">
+
 </head>
-<body>
+<body onload="loadData()">
   <div id="navbar">
 
   </div>
@@ -23,7 +27,7 @@
        
       </div>
       <div id="heading">
-        <h1>Goa  Holiday Homes</h1>
+        <h1 id="city"> </h1>
         <h1 id="h1second">
           We have 300 Vacation Rentals - Search by Dates for availibilty
         </h1>
@@ -77,16 +81,16 @@
 <a href=""><p>Home</p></a>
     <p>/</p>
   <a href="">
-    <p>India</p>
+    <p id="country"></p>
   </a> 
     <p>/</p>
-    <P>Goa</P>
+    <P id="city2"></P>
 
 
 </div>
 <hr>
 <div id="head">
-    <h2>Goa Holiday Homes</h2>
+    <h2 id="city1"></h2>
     
 </div>
 <div id="container">
@@ -114,7 +118,7 @@
   width="1450"
   height="400"
   id="gmap_canvas"
-  src="https://maps.google.com/maps?q=Goa india&t=&z=13&ie=UTF8&iwloc=&output=embed"
+
   frameborder="0"
   scrolling="no"
   marginheight="0"
@@ -156,5 +160,7 @@
 </body>
 </html>
 <script src="second.js" type="module">
-
+  
 </script>
+<script src="./scripts/index.js" type="module"></script>
+<script src="./scripts/buttons_navbar_PR.js"></script>

@@ -9,6 +9,6 @@ function openCity(evt, cityName) {
     tablinks[i].className = tablinks[i].className.replace(" active", "");
   }
   document.getElementById(cityName).style.display = "block";
-  evt.currentTarget.className += " active";
+  // evt.currentTarget.className += " active";
 }
 openCity(event, "Asia");
