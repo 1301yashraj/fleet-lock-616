@@ -1,12 +1,12 @@
 let slider = document.querySelector("#slide");
 let div_in_slider = document.querySelectorAll("#slide div");
-console.log(div_in_slider.length);
+//console.log(div_in_slider.length);
 let next = document.querySelector("#btnnext");
 let prev = document.querySelector("#btnprev");
 
 let count = 5;
 let size = div_in_slider[0].clientWidth + 67;
-console.log(size);
+// console.log(size);
 
 slider.style.transform = `translateX(${-size * count}px)`;
 
@@ -20,7 +20,7 @@ function moveright() {
     slider.style.transition = "none";
     count = 5;
   }
-  console.log(count);
+  // console.log(count);
   slider.style.transform = `translateX(${-size * count}px)`;
 }
 
@@ -35,7 +35,7 @@ function moveleft() {
     slider.style.transform = `translateX(${-size * count}px)`;
     flag = true;
   }
-  console.log(count);
+  // console.log(count);
   slider.style.transform = `translateX(${-size * count}px)`;
 }
 
@@ -54,9 +54,8 @@ let img_for_trip = [
 let alldivs = document.querySelectorAll("#tripvillas_grid div");
 let i = 0;
 alldivs.forEach((el) => {
-  console.log(el);
+  // console.log(el);
   el.style.backgroundImage = `linear-gradient(rgba(10, 10, 10, 0.6), rgba(4, 4, 4, 0.5)),
     url(${img_for_trip[i]})`;
   i++;
 });
-
