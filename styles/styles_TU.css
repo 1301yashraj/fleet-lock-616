@@ -438,3 +438,18 @@ margin-top: 13px;
   color: 
   #66666b;
 }
+
+iframe{
+  width: 140%;
+}
+
+@media all and (min-width:641px) and (max-width:1007px){
+  iframe{
+  width: 1018px;
+  }
+}
+@media all and (min-width:1008px) and (max-width:1500px){
+  iframe{
+  width: 800px;
+  }
+}
