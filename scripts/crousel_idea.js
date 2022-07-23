@@ -8,7 +8,6 @@ prev_idea.addEventListener("click", moveleft_idea);
 
 let count_idea = 5;
 let size_idea = div_in_slider_idea[0].clientWidth + 67;
-console.log(size_idea);
 
 slider_idea.style.transform = `translateX(${-size_idea * count_idea}px)`;
 
@@ -22,7 +21,7 @@ function moveright_idea() {
     slider_idea.style.transition = "none";
     count_idea = 5;
   }
-  console.log(count_idea);
+
   slider_idea.style.transform = `translateX(${-size_idea * count_idea}px)`;
 }
 
@@ -36,6 +35,6 @@ function moveleft_idea() {
     slider_idea.style.transform = `translateX(${-size_idea * count_idea}px)`;
     flag = true;
   }
-  console.log(count_idea);
+
   slider_idea.style.transform = `translateX(${-size_idea * count_idea}px)`;
 }
