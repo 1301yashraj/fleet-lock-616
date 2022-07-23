@@ -4,6 +4,9 @@ let websiteData=JSON.parse(localStorage.getItem("data_city"))
   let mapOnPage=document.querySelector("#gmap_canvas")
   mapOnPage.src=`https://maps.google.com/maps?q=${websiteData[0].city}${websiteData[0].country}&t=&z=13&ie=UTF8&iwloc=&output=embed`
     let container=document.querySelector("#dataContainer")
+
+    let total=document.querySelector("#total")
+    total.innerText=`Total Result ${websiteData.length}0`
 function sort(){
 
 
@@ -30,8 +33,10 @@ function sort(){
         displayData(websiteData)
     }
 }
-    
+   for(let i=0;i<5;i++){
     displayData(websiteData)
+   } 
+    
     function displayData(data){
         
        

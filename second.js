@@ -31,8 +31,11 @@ function myfun2(){
     Contry.innerText=`${websiteData[0].country} `
     let mapOnPage=document.querySelector("#gmap_canvas")
     mapOnPage.src=`https://maps.google.com/maps?q=${websiteData[0]} ${websiteData[0].country}&t=&z=13&ie=UTF8&iwloc=&output=embed`
+    for(let i=0;i<5;i++){
+        displayData(websiteData)
+       } 
 
-    displayData(websiteData)
+    
     function displayData(data){
      
         let container=document.querySelector("#container")
