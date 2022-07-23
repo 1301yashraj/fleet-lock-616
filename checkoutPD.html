@@ -346,14 +346,14 @@
 
   <div id="container">
       
-      <div id="imageID">
-          <img src="https://cf.bstatic.com/xdata/images/hotel/max1024x768/230558363.jpg?k=d346be7aa296bc8772e2996141038c379a61a14281bf02293a19101306a85b6f&o=&hp=1" alt="">
-          <p>Property Ref Id #23799764</p>
-          <h2>Mango House</h2>
-          <h4>Galle Sri lanka</h4>
-          <h5>Private Room | Accommodates 2 guests</h5>
+    <div id="imageID">
+        <img id="img_1" src="https://cf.bstatic.com/xdata/images/hotel/max1024x768/230558363.jpg?k=d346be7aa296bc8772e2996141038c379a61a14281bf02293a19101306a85b6f&o=&hp=1" alt="">
+        <p id="ins_property">Property Ref Id #23799764</p>
+        <h2 id="Title">Mango House</h2>
+        <h4 id="ins_country">Galle Sri lanka</h4>
+        <h5 id="">Private Room | Accommodates 2 guests</h5>
 
-      </div>
+    </div>
 
      <div id="mainbox">
       <div id="box1">
@@ -363,7 +363,7 @@
           <h3>24-Aug-2022 <br> Check Out</h3>
       </div>
       <div id="box1">
-          <h3>1 <br> Guest</h3>
+          <h3 id="gst">1 <br> Guest</h3>
       </div>
       <div id="box1">
           <h3>2 <br> Unit</h3>
@@ -447,5 +447,54 @@
 <script src="./scripts/navbar_import.js" type="module"></script>
 <script src="./scripts/buttons_navbar_PR.js"></script>
 <script>
+
+
+let booking_P = JSON.parse(localStorage.getItem("bookingdone"));
+console.log(booking_P)
+
+booking_P.forEach(el => {
+  let title = document.getElementById("Title");
+title.innerText = el.title;
+
+let country = document.getElementById("ins_country")
+country.innerText = el.country;
+
+let city = document.getElementById("ins_city");
+city.innerText = el.city;
+
+let avatar = document.getElementById("img_1");
+avatar.src = el.img_url
+console.log(avatar)
+let property_id = document.getElementById("ins_property")
+property_id.innerText = el.refid;
+
+let property_type = document.getElementById("priV_button");
+property_type.innerText = el.type_of_property;
+document.getElementById("typepropery").innerText = property_type.innerText;
+
+let bathroom = document.getElementById("bathroom_dom");
+bathroom.innerText = el.bathroom;
+
+
+let max_guest = document.getElementById("max_guest_dom");
+max_guest.innerText = el.maxguests;
+document.getElementById("max_guest_button").innerText = `${max_guest.innerText} Max guest`;
+
+
+let address = document.getElementById("title_location");
+address.innerText = `${el.city} | ${el.country}`
+
+
+let guest = document.getElementById("gst");
+guest.innerText = guest; 
+
+})
+
+
+
+
+
+
+
   
 </script>

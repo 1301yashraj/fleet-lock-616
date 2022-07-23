@@ -98,7 +98,7 @@ instant.addEventListener("click",()=>{
   console.log(booking_done)
 
   /// add location here praful
-  // window.location.href="---"
+  window.location.href="./checkoutPD.html"
 
 })
 
