@@ -43,7 +43,7 @@ function myfun2(){
            
             a.onclick=function(){
                saveInLocal(elem)
-               a.href="second.html"
+            //   a.href="second.html"
             }
 
             let image=document.createElement("img")
@@ -131,7 +131,7 @@ let bookdata=[]
 bookdata.push(elem)
 localStorage.setItem("book",JSON.stringify(bookdata))
 console.log(bookdata)
-// a.href="second.html"
+window.location.href="booking_TU.html"
 }
 
 
@@ -140,6 +140,7 @@ document.querySelector("#submit").addEventListener("click",submitFUn)
    
    window.location.href="secondGoa.html"
   }
+
 
 
 

@@ -1,3 +1,4 @@
+
 * {
   padding: 0;
   margin: 0;
@@ -91,7 +92,7 @@
 }
 #vr{
   border-left: 1px solid #ccc;
-  height: 340%;
+  height: 2700px;
   position: absolute;
   left: 71%;
   margin-left: 50px;
@@ -101,7 +102,7 @@
   position: fixed;
   left: 77%;
 margin-top: -100px;
-
+margin-bottom: 10px;
   
 }
 #price>p{
@@ -130,7 +131,7 @@ color: #000000;
 }
 #sticky{
   
-  
+
   
 }
 #price>p+div>h1+p{
@@ -353,6 +354,7 @@ margin-top: 13px;
   color: #333333;
   line-height: 34px;
   font-size: 23px;
+  
 }
 .key_map{
   margin-top: 40px;
@@ -405,30 +407,31 @@ margin-top: 13px;
   margin-top: 70px;
 }
 .gmap_canvas {
-  overflow: hidden;
   background: none !important;
-  height: 350px;
+  height: 450px;
   width: 600px;
-  position: sticky;
-  margin-left: 200px;
+  margin-left: 49px;
 
   }
 .mapouter {
   position: relative;
   text-align: right;
-  height: 380px;
-  width: 600px;
+  height: 400px;
+  width: 1450px;
   display: block;
   justify-content: end;
   position: sticky;
   margin-top: 22px;
+
  
 }
 #policies{
+  margin-top: -95px;
   width: 69%;
 }
 #policies p,#policies h2{
   margin-left: 47px;
+  margin-bottom: 10px;
 }
 #policies p{
   margin-top: 20px;
