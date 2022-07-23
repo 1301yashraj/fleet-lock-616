@@ -269,14 +269,17 @@ function sort(){
 
     function saveInLocal(elem){
 
-        let bookdata=JSON.parse(localStorage.getItem("book"))||[]
+        let bookdata=[];
         bookdata.push(elem)
         localStorage.setItem("book",JSON.stringify(bookdata))
+        window.location.href="booking_TU.html"
         console.log(bookdata)
     }
-    import navbar from "../componentNav/navbar.js";
-    console.log(navbar());
-    document.getElementById("navbar").innerHTML = navbar();
+
+
+    // import navbar from "../componentNav/navbar.js";
+    // console.log(navbar());
+    // document.getElementById("navbar").innerHTML = navbar();
     
 
   
