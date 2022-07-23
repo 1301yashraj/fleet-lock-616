@@ -213,13 +213,24 @@ function myfun2(){
       },
     
     ]
-
+    
+    let City=document.querySelector("#city")
+    City.innerText=`${websiteData[0].city} Holiday Homes`
+    let City1=document.querySelector("#city1")
+    City1.innerText=`${websiteData[0].city} Holiday Homes`
+    let City2=document.querySelector("#city2")
+    City2.innerText=`${websiteData[0].city} `
+    let Contry=document.querySelector("#country")
+    Contry.innerText=`${websiteData[0].country} `
+    let mapOnPage=document.querySelector("#gmap_canvas")
+    mapOnPage.src=`https://maps.google.com/maps?q=${websiteData[0]} ${websiteData[0].country}&t=&z=13&ie=UTF8&iwloc=&output=embed`
 
     displayData(websiteData)
     function displayData(data){
-        
+     
         let container=document.querySelector("#container")
         data.forEach(function(elem){
+       
             let div=document.createElement("div")
             let a=document.createElement("a")
            
@@ -322,7 +333,6 @@ document.querySelector("#submit").addEventListener("click",submitFUn)
    
    window.location.href="secondGoa.html"
   }
-
 
 
 
