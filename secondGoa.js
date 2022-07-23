@@ -274,9 +274,9 @@ function sort(){
         localStorage.setItem("book",JSON.stringify(bookdata))
         console.log(bookdata)
     }
-    import navbar from "../componentNav/navbar.js";
-    console.log(navbar());
-    document.getElementById("navbar").innerHTML = navbar();
+    // import navbar from "../componentNav/navbar.js";
+    // console.log(navbar());
+    // document.getElementById("navbar").innerHTML = navbar();
     
 
   
