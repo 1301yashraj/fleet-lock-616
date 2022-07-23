@@ -1,4 +1,4 @@
-let obj = [
+let Data_for_tripsvilla = [
   {
     //   YASH
     Ammenities: [
@@ -10,7 +10,7 @@ let obj = [
     ],
     bathroom: "3",
     bedroom: "2",
-    city: "goa",
+    city: "Goa",
     costpernight: "2000",
     country: "India",
     img_url:
@@ -32,7 +32,7 @@ let obj = [
     ],
     bathroom: "4",
     bedroom: "4",
-    city: "goa",
+    city: "Goa",
     costpernight: "20000",
     country: "India",
     img_url:
@@ -47,7 +47,7 @@ let obj = [
     Ammenities: ["Internet", "Parking", "Refrigerator"],
     bathroom: "1",
     bedroom: "1",
-    city: "goa",
+    city: "Goa",
     costpernight: "4000",
     country: "India",
     img_url:
@@ -71,7 +71,7 @@ let obj = [
     ],
     bathroom: "2",
     bedroom: "2",
-    city: "goa",
+    city: "Goa",
     costpernight: "8000",
     country: "India",
     img_url:
@@ -96,7 +96,7 @@ let obj = [
     ],
     bathroom: "3",
     bedroom: "3",
-    city: "goa",
+    city: "Goa",
     costpernight: "7000",
     country: "India",
     img_url:
@@ -117,7 +117,7 @@ let obj = [
     ],
     bathroom: "2",
     bedroom: "2",
-    city: "goa",
+    city: "Goa",
     costpernight: "5000",
     country: "India",
     img_url:
@@ -457,12 +457,20 @@ let obj = [
   },
 ];
 
-let x = document.getElementById("goa1");
-x.addEventListener("click", () => {
-  console.log("HELLO");
-  let ar = obj.filter((el) => {
-    return el.city == "goa";
+let slider_elements = document.querySelectorAll("#slide > div");
+slider_elements.forEach((x, i) => {
+  let city = x.children[0].innerText;
+  x.addEventListener("click", () => {
+    selectCity(city);
   });
-  console.log(ar);
-  localStorage.setItem("hotles_by_city", JSON.stringify(ar));
 });
+
+function selectCity(city) {
+  console.log(city);
+  let data_city = Data_for_tripsvilla.filter((el) => {
+    return el.city == city;
+  });
+
+  //  THIS KEY ISWHAT YOU HAVE TO USE IN YOUR FILE
+  localStorage.setItem("data_city", JSON.stringify(data_city));
+}
