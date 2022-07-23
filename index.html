@@ -33,7 +33,14 @@
       <div id="lowersection">
         <div id="locationinput">
           <span class="material-symbols-outlined"> search </span>
-          <input type="text" id="location" placeholder="Location" />
+          <input type="text" id="location" placeholder="Location" list="city_dropdown"/>
+          <datalist id="city_dropdown">
+            <option value="Goa">
+            <option value="Kerala">
+            <option value="Lonavala">
+            <option value="Galle">
+            <option value="Pataya">
+          </datalist>
         </div>
 
         <div id="checkindiv">
@@ -60,7 +67,7 @@
           <input type="number" id="guest" placeholder="Select Guest" />
         </div>
 
-        <button id="submit">SEARCH</button>
+        <button id="submit_search_button">SEARCH</button>
       </div>
     </div>
 
@@ -625,3 +632,4 @@
 <script src="./scripts/buttons_navbar_PR.js"></script>
 <script src="./scripts/index.js" type = "module"></script>
 
+<script src="./scripts/signup.js"></script>

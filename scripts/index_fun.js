@@ -36,7 +36,7 @@ let Data_for_tripsvilla = [
     costpernight: "20000",
     country: "India",
     img_url:
-    "https://d2vcelvjdj7n25.cloudfront.net/media/property_photos/image_watermarked_1024/25484435/605fb783fe0411e888730a8e1b1ce4da_watermarked_image_1024.jpeg",
+      "https://d2vcelvjdj7n25.cloudfront.net/media/property_photos/image_watermarked_1024/25484435/605fb783fe0411e888730a8e1b1ce4da_watermarked_image_1024.jpeg",
     maxguests: "12",
     refid: "",
     title: "Luxury Villa With Private Swimming Pool",
@@ -455,117 +455,117 @@ let Data_for_tripsvilla = [
     type_of_property: "Farm",
     Rating: "4.5",
   },
-  //Priyanka 
-  
-{
-  city: "Kerala",
-  country: "India",
-  title: "Cozy 2 Bhk Villa In Lonavala With Lounge Pool",
-  img_url:
-    "https://d2vcelvjdj7n25.cloudfront.net/media/property_photos/image_watermarked_1024/21374395/illammainview1_watermarked_image_1024.jpeg",
-  type_of_property: "Villa",
-  bedroom: "2",
-  bathroom: "3",
-  maxguests: "10",
-  costpernight: "7875",
-  refid: "129",
-  Ammenities: [
-    "Swimming Pool",
-    "Air Conditioner",
-    "Housekeeping",
-    "Functional Kitchen",
-    "Washing Machine",
-  ],
-},
+  //Priyanka
 
-{
-  city: "Kerala",
-  country: "India",
-  title: "Sublime Weekend Rental Villa",
-  img_url:
-    "https://d2vcelvjdj7n25.cloudfront.net/media/property_photos/image_watermarked_1024/11306022/helecam_watermarked_image_1024.jpeg",
-  type_of_property: "Villa",
-  bedroom: "4",
-  bathroom: "4",
-  maxguests: "20",
-  costpernight: "25000",
-  refid: "155",
-  Ammenities: [
-    "Swimming Pool",
-    "Air Conditioner",
-    "Internet",
-    "Television",
-    "Refrigerator",
-    "Gym",
-  ],
-},
+  {
+    city: "Kerala",
+    country: "India",
+    title: "Cozy 2 Bhk Villa In Lonavala With Lounge Pool",
+    img_url:
+      "https://d2vcelvjdj7n25.cloudfront.net/media/property_photos/image_watermarked_1024/21374395/illammainview1_watermarked_image_1024.jpeg",
+    type_of_property: "Villa",
+    bedroom: "2",
+    bathroom: "3",
+    maxguests: "10",
+    costpernight: "7875",
+    refid: "129",
+    Ammenities: [
+      "Swimming Pool",
+      "Air Conditioner",
+      "Housekeeping",
+      "Functional Kitchen",
+      "Washing Machine",
+    ],
+  },
 
-{
-  city: "Kerala",
-  country: "India",
-  title: "Marina Exotic Villa In Kerala",
-  img_url:
-    "https://d2vcelvjdj7n25.cloudfront.net/media/property_photos/image_watermarked_1024/13155710/poovath-heritage_091_watermarked_image_1024.jpeg",
-  type_of_property: "Apartment",
-  bedroom: "4",
-  bathroom: "5",
-  maxguests: "16",
-  costpernight: "25000",
-  refid: "781",
-  Ammenities: [
-    "Swimming Pool",
-    "Washing Machine",
-    "Dish Washer",
-    "Refrigerator",
-    "Gym",
-  ],
-},
+  {
+    city: "Kerala",
+    country: "India",
+    title: "Sublime Weekend Rental Villa",
+    img_url:
+      "https://d2vcelvjdj7n25.cloudfront.net/media/property_photos/image_watermarked_1024/11306022/helecam_watermarked_image_1024.jpeg",
+    type_of_property: "Villa",
+    bedroom: "4",
+    bathroom: "4",
+    maxguests: "20",
+    costpernight: "25000",
+    refid: "155",
+    Ammenities: [
+      "Swimming Pool",
+      "Air Conditioner",
+      "Internet",
+      "Television",
+      "Refrigerator",
+      "Gym",
+    ],
+  },
 
-{
-  city: "Kerala",
-  country: "India",
-  title: "Modi House Kerala",
-  img_url:
-    "https://d2vcelvjdj7n25.cloudfront.net/media/property_photos/image_watermarked_1024/11027405/dsc_0667_watermarked_image_1024.jpeg",
-  type_of_property: "Farm",
-  bedroom: "4",
-  bathroom: "6",
-  maxguests: "16",
-  costpernight: "23700",
-  refid: "154",
-  Ammenities: [
-    "Air Conditioner",
-    "Housekeeping",
-    "Functional Kitchen",
-    "Washing Machine",
-    "Dish Washer",
-    "Refrigerator",
-  ],
-},
+  {
+    city: "Kerala",
+    country: "India",
+    title: "Marina Exotic Villa In Kerala",
+    img_url:
+      "https://d2vcelvjdj7n25.cloudfront.net/media/property_photos/image_watermarked_1024/13155710/poovath-heritage_091_watermarked_image_1024.jpeg",
+    type_of_property: "Apartment",
+    bedroom: "4",
+    bathroom: "5",
+    maxguests: "16",
+    costpernight: "25000",
+    refid: "781",
+    Ammenities: [
+      "Swimming Pool",
+      "Washing Machine",
+      "Dish Washer",
+      "Refrigerator",
+      "Gym",
+    ],
+  },
 
-{
-  city: "Kerala",
-  country: "India",
-  title: "Haritage Ac Stay",
-  img_url:
-    "https://d2vcelvjdj7n25.cloudfront.net/media/property_photos/image_watermarked_1024/24431134/page5_watermarked_image_1024.jpeg",
-  type_of_property: "Villa",
-  bedroom: "3",
-  bathroom: "5",
-  maxguests: "14",
-  costpernight: "12000",
-  refid: "552",
-  Ammenities: [
-    "Swimming Pool",
-    "Air Conditioner",
-    "Internet",
-    "Television",
-    "Parking",
-    "Functional Kitchen",
-    "Washing Machine",
-    "Cook On",
-  ],
-},
+  {
+    city: "Kerala",
+    country: "India",
+    title: "Modi House Kerala",
+    img_url:
+      "https://d2vcelvjdj7n25.cloudfront.net/media/property_photos/image_watermarked_1024/11027405/dsc_0667_watermarked_image_1024.jpeg",
+    type_of_property: "Farm",
+    bedroom: "4",
+    bathroom: "6",
+    maxguests: "16",
+    costpernight: "23700",
+    refid: "154",
+    Ammenities: [
+      "Air Conditioner",
+      "Housekeeping",
+      "Functional Kitchen",
+      "Washing Machine",
+      "Dish Washer",
+      "Refrigerator",
+    ],
+  },
+
+  {
+    city: "Kerala",
+    country: "India",
+    title: "Haritage Ac Stay",
+    img_url:
+      "https://d2vcelvjdj7n25.cloudfront.net/media/property_photos/image_watermarked_1024/24431134/page5_watermarked_image_1024.jpeg",
+    type_of_property: "Villa",
+    bedroom: "3",
+    bathroom: "5",
+    maxguests: "14",
+    costpernight: "12000",
+    refid: "552",
+    Ammenities: [
+      "Swimming Pool",
+      "Air Conditioner",
+      "Internet",
+      "Television",
+      "Parking",
+      "Functional Kitchen",
+      "Washing Machine",
+      "Cook On",
+    ],
+  },
 ];
 
 let slider_elements = document.querySelectorAll("#slide > div");
@@ -584,6 +584,16 @@ function selectCity(city) {
 
   //  THIS KEY ISWHAT YOU HAVE TO USE IN YOUR FILE
   localStorage.setItem("data_city", JSON.stringify(data_city));
-  window.location.href="./second.html"
+  window.location.href = "./second.html";
 }
 
+document
+  .getElementById("submit_search_button")
+  .addEventListener("click", () => {
+    let city = document.querySelector("#location").value;
+    let data_city = Data_for_tripsvilla.filter((el) => {
+      return el.city == city;
+    });
+    localStorage.setItem("data_city", JSON.stringify(data_city));
+    window.location.href = "./secondGoa.html";
+  });

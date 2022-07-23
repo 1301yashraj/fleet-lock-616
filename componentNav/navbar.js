@@ -2,13 +2,13 @@ let navbar =() =>{
      return `
 
      <div id="nav1">
-    
+
      <a href="./index.html"><img src="https://d2v8elt324ukrb.cloudfront.net/static/riotuikit/images/logo.c72056a22f91.png" alt="" id="logo"></a>
 
     </div>
 
     <div id="nav2">
-     
+
     <div class="dropdown">
 
        <button onclick="myFunction()" class="dropbtn"> <img src="https://dqcgrsy5v35b9.cloudfront.net/cruiseplanner/assets/img/icons/login-w-icon.png" alt=""></button>
@@ -18,12 +18,12 @@ let navbar =() =>{
         </div>
     </div>
 
-    
+
     <div class="dropdown">
-   
+
         <button onclick="MyFunction()"  class="dropbtn">INR ^</button>
         <div id="myDropdowns" ; class="dropdown-content">
-     
+
         <div>
             <a href="#">AED</a>
             <a href="#">CAD</a>
@@ -58,13 +58,13 @@ let navbar =() =>{
             <a href="">TWD</a>
 
         </div>
-     
+
     </div>
 
- 
+
     <div class="dropdown">
 
-          <button onclick="MyFunctionlast()" class="dropbtn"> 
+          <button onclick="MyFunctionlast()" class="dropbtn">
                <img src="https://icon-library.com/images/three-bar-menu-icon/three-bar-menu-icon-3.jpg" alt=""></button>
 
           <div id="hamline" class="dropdown-content" >
@@ -86,11 +86,11 @@ let navbar =() =>{
           <a href="#"><p> Contact Us</p></a>
           <hr>
           <a href="#"><p> © Tripvillas Pte Ltd</p></a>
-            
+
         </div>
- 
+
     </div>
-    
+
 </div>
  `;
 };
