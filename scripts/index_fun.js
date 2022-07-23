@@ -36,7 +36,7 @@ let Data_for_tripsvilla = [
     costpernight: "20000",
     country: "India",
     img_url:
-      "https://d2vcelvjdj7n25.cloudfront.net/media/property_photos/image_watermarked_1024/29525985/85be9537001f11e890160a8e1b1ce4da_watermarked_image_1024.jpeg",
+    "https://d2vcelvjdj7n25.cloudfront.net/media/property_photos/image_watermarked_1024/25484435/605fb783fe0411e888730a8e1b1ce4da_watermarked_image_1024.jpeg",
     maxguests: "12",
     refid: "",
     title: "Luxury Villa With Private Swimming Pool",
@@ -51,10 +51,10 @@ let Data_for_tripsvilla = [
     costpernight: "4000",
     country: "India",
     img_url:
-      "https://d2vcelvjdj7n25.cloudfront.net/media/property_photos/image_watermarked_1024/20098241/a_watermarked_image_1024.jpeg",
+      "https://d2vcelvjdj7n25.cloudfront.net/media/property_photos/image_watermarked_1024/18542127/a8035d663dd411ebbcb50a5f3ca25ae5_watermarked_image_1024.jpeg",
     maxguests: "4",
     refid: "456",
-    title: "",
+    title: "3 Bedroom Ac Villa",
     type_of_property: "Homestay",
   },
 
@@ -75,7 +75,7 @@ let Data_for_tripsvilla = [
     costpernight: "8000",
     country: "India",
     img_url:
-      "https://d2vcelvjdj7n25.cloudfront.net/media/property_photos/image_watermarked_1024/20527902/97d7cc23217311eaa3940a5f3ca25ae5_watermarked_image_1024.jpeg",
+      "https://d2vcelvjdj7n25.cloudfront.net/media/property_photos/image_watermarked_1024/12093242/48bfbf87-2ecb-44e8-829f-e199ec428f89_watermarked_image_1024.jpeg",
     maxguests: "4",
     refid: "791",
     title: "2 Bedroom Ac Villa",
@@ -100,7 +100,7 @@ let Data_for_tripsvilla = [
     costpernight: "7000",
     country: "India",
     img_url:
-      "https://d2vcelvjdj7n25.cloudfront.net/media/property_photos/image_watermarked_1024/87931650/f20734fbf23b11e888730a8e1b1ce4da_watermarked_image_1024.jpeg",
+      "https://d2vcelvjdj7n25.cloudfront.net/media/property_photos/image_watermarked_1024/15605844/098df697f66311e9924f0a8e1b1ce4da_watermarked_image_1024.jpeg",
     maxguests: "8",
     refid: "654",
     title: "3 Bedroom Bungalow At Villa Venus In Candolim, Goa",
@@ -121,7 +121,7 @@ let Data_for_tripsvilla = [
     costpernight: "5000",
     country: "India",
     img_url:
-      "https://d2vcelvjdj7n25.cloudfront.net/media/property_photos/image_watermarked_1024/25773982/0808dd53d37111e7ae4e0a8e1b1ce4da_watermarked_image_1024.jpeg",
+      "https://d2vcelvjdj7n25.cloudfront.net/media/property_photos/image_watermarked_1024/20784084/efb62f8a2a5d11e99d230a8e1b1ce4da_watermarked_image_1024.jpeg",
     maxguests: "6",
     refid: "897",
     title: "2bhk Pool Facing Apartment.",
@@ -266,7 +266,7 @@ let Data_for_tripsvilla = [
     country: "India",
     title: "Sublime Lonavala Weekend Rental Villa",
     img_url:
-      "https://d2vcelvjdj7n25.cloudfront.net/media/property_photos/image_watermarked_1024/10955990/bfd091ef7b6b11e8b1610a8e1b1ce4da_watermarked_image_1024.jpeg",
+      "https://d2vcelvjdj7n25.cloudfront.net/media/property_photos/image_watermarked_1024/25932684/10188-1jpg_watermarked_image_1024.jpeg",
     type_of_property: "Villa",
     bedroom: "4",
     bathroom: "4",
@@ -371,7 +371,7 @@ let Data_for_tripsvilla = [
     costpernight: "10000",
     country: "Thailand",
     img_url:
-      "https://www.tripvillas.com/holiday-home/31900325-jomtien-paradise-villa-5-bed-property-with-jet-pool-and-sauna-in-pattaya/",
+      "https://d2vcelvjdj7n25.cloudfront.net/media/property_photos/image_watermarked_1024/17262099/dfd4698ca2c611e783140a92a929817e_watermarked_image_1024.jpeg",
     maxguests: "10",
     refid: "200",
     title:
@@ -473,4 +473,6 @@ function selectCity(city) {
 
   //  THIS KEY ISWHAT YOU HAVE TO USE IN YOUR FILE
   localStorage.setItem("data_city", JSON.stringify(data_city));
+  window.location.href="./second.html"
 }
+
