@@ -111,14 +111,14 @@
 
 .slider_buttons > #btnprev_ideas > span {
   position: absolute;
-  top: 280%;
+  top: 255%;
   font-size: 40px;
   color: black;
 }
 
 .slider_buttons > #btnnext_ideas > span {
   position: absolute;
-  top: 280%;
+  top: 255%;
   font-size: 40px;
   right: 2%;
   color: black;
